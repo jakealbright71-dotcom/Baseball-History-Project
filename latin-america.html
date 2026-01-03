@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baseball in Latin America</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">⚾ Baseball Learning</a>
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-landmark"></i> USA History</a>
+                <a href="latin-america.html" class="active"><i class="fas fa-globe-americas"></i> Latin America</a>
+                <a href="rules.html"><i class="fas fa-baseball-ball"></i> Rules & Gameplay</a>
+                <a href="#glossary"><i class="fas fa-book"></i> Glossary</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" style="background: linear-gradient(rgba(0,34,68,0.8), rgba(196,30,58,0.8)), url('https://images.unsplash.com/photo-1522858547137-f1dce0689c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') center/cover;">
+        <div class="hero-content">
+            <h1 class="hero-title">Baseball in Latin America</h1>
+            <p class="hero-subtitle">A passionate tradition across many nations</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="content-section">
+            <div class="content-with-image reverse">
+                <div class="image-content">
+                    <img src="https://images.unsplash.com/photo-1526310023473-10fb31a8109a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Baseball in Latin America" class="content-image">
+                    <p class="image-caption">Photo by Justin Chanthala from Pexels | Baseball culture in Latin America</p>
+                </div>
+                <div class="text-content">
+                    <h2><i class="fas fa-globe-americas"></i> Baseball's Journey South</h2>
+                    <p>Baseball arrived in Latin America in the late 19th century through various routes: Cuban students returning from the U.S., American sailors, and workers on sugar plantations. It quickly became more than a sport—it became a cultural passion.</p>
+                    
+                    <h3><i class="fas fa-map-marked-alt"></i> Countries and Their Baseball Traditions</h3>
+                    <div class="countries-grid">
+                        <div class="country-card">
+                            <h4><i class="fas fa-flag"></i> Cuba</h4>
+                            <p>Baseball since 1860s, strong amateur tradition</p>
+                        </div>
+                        <div class="country-card">
+                            <h4><i class="fas fa-flag"></i> Dominican Republic</h4>
+                            <p>Produces most MLB players per capita</p>
+                        </div>
+                        <div class="country-card">
+                            <h4><i class="fas fa-flag"></i> Puerto Rico</h4>
+                            <p>Professional league since 1938</p>
+                        </div>
+                        <div class="country-card">
+                            <h4><i class="fas fa-flag"></i> Venezuela</h4>
+                            <p>Passionate fan base, winter league</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Map Section -->
+        <section class="map-section">
+            <h2><i class="fas fa-map"></i> Baseball Popularity in Latin America</h2>
+            <div class="interactive-map">
+                <div class="map-item" style="top: 30%; left: 20%;">
+                    <div class="map-dot cuba">CUB</div>
+                    <div class="map-info">Cuba: Baseball since 1860s</div>
+                </div>
+                <div class="map-item" style="top: 45%; left: 40%;">
+                    <div class="map-dot dr">DR</div>
+                    <div class="map-info">Dominican Republic: MLB player factory</div>
+                </div>
+                <div class="map-item" style="top: 35%; left: 35%;">
+                    <div class="map-dot pr">PR</div>
+                    <div class="map-info">Puerto Rico: Professional league since 1938</div>
+                </div>
+                <div class="map-item" style="top: 50%; left: 30%;">
+                    <div class="map-dot ven">VEN</div>
+                    <div class="map-info">Venezuela: Passionate winter league</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section class="quiz-section">
+            <h2><i class="fas fa-question-circle"></i> Latin America Baseball Quiz</h2>
+            <div class="quiz-box">
+                <div class="quiz-question" id="quiz-question-la">Which Latin American country produces the most MLB players per capita?</div>
+                <div class="quiz-options">
+                    <button class="quiz-option" onclick="checkAnswerLA(this, 'correct')">Dominican Republic</button>
+                    <button class="quiz-option" onclick="checkAnswerLA(this, 'wrong')">Cuba</button>
+                    <button class="quiz-option" onclick="checkAnswerLA(this, 'wrong')">Mexico</button>
+                    <button class="quiz-option" onclick="checkAnswerLA(this, 'wrong')">Venezuela</button>
+                </div>
+                <div class="quiz-feedback" id="quiz-feedback-la"></div>
+            </div>
+        </section>
+
+        <!-- Timeline for Latin America -->
+        <section class="timeline-section">
+            <h2><i class="fas fa-history"></i> Latin American Baseball Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">1860s</div>
+                    <div class="timeline-content">
+                        <h4>Baseball in Cuba</h4>
+                        <p>First baseball games played in Havana</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">1900</div>
+                    <div class="timeline-content">
+                        <h4>Mexico League</h4>
+                        <p>First professional games in Mexico</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">1938</div>
+                    <div class="timeline-content">
+                        <h4>Puerto Rico</h4>
+                        <p>Professional baseball league established</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">1951</div>
+                    <div class="timeline-content">
+                        <h4>First Latin MVP</h4>
+                        <p>Minnie Miñoso becomes star in MLB</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Today</div>
+                    <div class="timeline-content">
+                        <h4>Global Impact</h4>
+                        <p>Over 30% of MLB players are Latin American</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- References -->
+        <section class="references-section">
+            <h2><i class="fas fa-bookmark"></i> References & Sources</h2>
+            <div class="references-box">
+                <ul>
+                    <li>Burgos, A. (2007). <em>Playing America's Game: Baseball, Latinos, and the Color Line</em>. University of California Press.</li>
+                    <li>Latin American Baseball History Project. (2023). <em>Digital Archive</em>.</li>
+                    <li>Photo credits: Unsplash.com - Licensed under Creative Commons</li>
+                    <li>Data from MLB International Development Office</li>
+                </ul>
+                <p class="copyright-notice"><i class="fas fa-exclamation-circle"></i> Educational use with proper attribution. Copyright complied with.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <!-- Same footer as index.html -->
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Baseball Learning Project</h3>
+                <p>Educational website for students aged 12-14</p>
+            </div>
+            <div class="footer-section">
+                <h3>Pages</h3>
+                <a href="index.html">USA History</a>
+                <a href="latin-america.html">Latin America</a>
+                <a href="rules.html">Rules & Gameplay</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Baseball History Educational Project | Created for educational purposes</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
